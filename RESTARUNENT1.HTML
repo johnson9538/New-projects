@@ -1,0 +1,577 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurantly</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-attachment: fixed;
+            background-size: 100%;
+
+        }
+       ul{
+        display: flex;
+        padding: 1px;
+        background-color: rgba(0, 0, 0, 0.452);
+        list-style-type: none;
+        position: fixed;
+        margin: top 10px;;
+        width: 100%;
+       }
+       li{
+        color: white;
+        font-size: 20px;
+        margin: 10px;
+        margin-right: 35px;
+
+       }
+       #border{
+        background-color: red;
+        border-radius: 25px;
+        padding: 10px;
+        margin-top: 0px;
+       }
+       #border:hover{
+        background-color: rgb(190, 142, 68);
+       }
+       .head1{
+        font-size: 50px;
+        color: white;
+        text-align: center;
+        margin-top: 200px;
+        font-family: sans-serif;
+       }
+       .head2{
+        font-family: serif;
+        font-size: 30px;
+        color: white;
+        text-align: center;
+       }
+       #menu{
+        border: solid orange;
+        border-radius: 25px;
+        background-color: transparent;
+        color: white;
+        margin-left: 380px;
+        padding: 10px;
+       }
+       #book{
+        border: solid orange;
+        border-radius: 25px;
+        background-color: transparent;
+        color: white;
+        text-align: center;
+        margin-left: 20px;
+        padding: 10px;
+
+       }
+       #a{
+        background-image:url(https://bootstrapmade.com/content/templatefiles/Restaurantly/Restaurantly-bootstrap-website-template.avif);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: rgb(95, 84, 84);
+        background-blend-mode:multiply ;
+       }
+       #b{
+        background-image:url(hotel.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color:rgb(94, 80, 80);
+        background-blend-mode: multiply;
+        
+       }
+       #c{
+        background-color: rgb(23, 21, 21);
+       }
+       h1{
+         font-size: 20px;
+       }
+       p{
+        font-size: 20px;
+       }
+       #k{
+         display: flex;
+         background-color: black;
+       }
+       .l{
+        height: 200px;
+        width: 300px;
+        background-color:black;
+        color: white;
+        text-align: center;
+        margin-right: 20px;
+        animation: a 2s;
+       }
+       @keyframes a{
+              25%{background-color: beige;}
+       }
+       .m{
+        height: 200px;
+        width: 300px;
+        background-color:black;
+        color: white;
+        text-align: center;
+        margin-right: 20px;
+
+       }
+       .n{
+        height: 200px;
+        width: 300px;
+        background-color: black;
+        color: white;
+        text-align: center;
+       }
+       .l:hover{
+        height: 225px;
+        width: 325px;
+        background-color: rgba(255, 166, 0, 0.644);
+        color: white;
+       }
+       .m:hover{
+        height: 225px;
+        width: 325px;
+        background-color: rgba(255, 166, 0, 0.61);
+        color: white;
+       }
+       .n:hover{
+        height: 225px;
+        width: 325px;
+        background-color: rgba(255, 166, 0, 0.623);
+        color: white;
+       }
+       #secpage{
+        margin-left: 100px;
+       }
+       
+       #phone{
+        margin-left: 20px;
+       }
+       #res{
+        color: orange;
+       }
+       #sec{
+        margin-left: 100px;
+        font-size: 25px;
+       }
+       #z{
+        display: flex;
+        background-color: black;
+       }
+       #loo{
+        margin-left: 80px;
+       }
+       #image:hover{
+        height: 425px;
+        width:475px;
+       }
+       
+       .four{
+        background-color: rgba(0, 0, 0, 0.815);
+       }
+       .fa{
+        font-size: 40px;
+        color: rgba(255, 255, 0, 0.514);
+       }
+       .t{
+        color: white;
+        text-transform: uppercase;
+       }
+       .t1{
+        color: rgb(239, 159, 20);
+        text-transform: capitalize;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-size: 50px;
+       }
+       #s{
+        background-color: aqua;
+       }
+       .o{
+        background-color: rgb(14, 13, 13);
+       }
+       .section-title{
+        background-color:rgb(14, 13, 13) ;
+       }
+       .o1{
+        color:rgb(239, 159, 20);
+        text-transform: capitalize;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-size: 40px;
+       }
+       .headt2{
+        font: bold;
+        color: white;
+        text-transform: uppercase;
+        font-size: x-large;
+       }
+       .menu_item{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+       }
+       .h1t{
+        color: white;
+        font-weight: bold;
+
+       }
+       .dash{
+        color: rgb(123, 120, 120);
+       }
+       .m1{
+        border: 1px;
+        border-radius: 50%;
+       }
+       .jj{
+        display: flex;
+       }
+      
+       .vv{
+        display: flex;
+       }
+       .ll{
+        margin-left: -120px;
+        
+        
+       }
+       .kk{
+        margin-left: -110px;
+       }
+       .h3t{
+        color: grey;
+        font-size: medium;
+       }
+       .h4t{
+        color: white;
+        font-size: medium;
+       }
+       .section-title{
+        color: white;
+        font-size: x-large;
+        text-transform: uppercase;
+       }
+       .section-title1{
+        color: orange;
+        font-size: 60px;
+        font-weight: bold;
+        text-transform: capitalize;
+        font-family: 'Times New Roman', Times, serif;
+       }
+       .section-title2{
+        color: white;
+        font-size: x-large;
+        text-transform: uppercase;
+       }
+       .section-title3{
+        color: orange;
+        font-size: 60px;
+        font-weight: bold;
+        text-transform: capitalize;
+        font-family: 'Times New Roman', Times, serif;
+       }
+       .text1{
+        color: white;
+       }
+       .specials-menu{
+        display: flex;
+        color: black;
+       }
+       .table1{
+        padding: 15px;
+        background-color: transparent;
+        width: 400px;
+        border-color:rgba(255, 166, 0, 0.482);
+        margin: 10px;
+        color: rgba(255, 255, 255, 0.281);
+        text-align: center;
+        
+        
+       }
+       .table2{
+        padding: 15px;
+        background-color: transparent;
+        width: 400px;
+        border-color: rgba(255, 166, 0, 0.482);
+        margin: 10px;
+        color: rgba(255, 255, 255, 0.281);
+        text-align: center;
+        
+       }
+       .table3{
+        padding: 15px;
+        background-color: transparent;
+        width: 400px;
+        border-color: rgba(255, 166, 0, 0.482);
+        margin: 10px;
+        color: rgba(255, 255, 255, 0.281);
+        text-align: center;
+        
+       }
+       .table4{
+        padding: 15px;
+        background-color: transparent;
+        width: 400px;
+        border-color: rgba(255, 166, 0, 0.482);
+        margin: 15px;
+        color: rgba(255, 255, 255, 0.281);
+        text-align: center;
+       }
+       .table5{
+        padding: 15px;
+        background-color: transparent;
+        width: 400px;
+        border-color: rgba(255, 166, 0, 0.482);
+        color: rgba(255, 255, 255, 0.281);
+        text-align: center;
+       }
+       .table6{
+        padding: 15px;
+        background-color: transparent;
+        width: 400px;
+        border-color: rgba(255, 166, 0, 0.482);
+        color: rgba(255, 255, 255, 0.281);
+        text-align: center;
+       }
+       .table7{
+        padding: 45px;
+        background-color: transparent;
+        width: 1250px;
+        border-color: rgba(255, 166, 0, 0.482);
+        margin: 13px;
+        color: rgba(255, 255, 255, 0.281);
+        text-align: center;
+       }
+       #border1{
+        background-color: red;
+        border-radius: 25px;
+        padding: 10px;
+        margin-top: 0px;
+        list-style: none;
+        width: 155px;;
+       }
+       #border1:hover{
+        background-color: rgb(190, 142, 68);
+       }
+       .price{
+        color: orangered;
+       }
+
+       
+    </style>
+</head>
+
+<body>
+    <div id="a">
+    <p style="color:white;" id="phone">Pho no:9538679804 Mon-sat 11AM-23PM</p>
+    <ul>
+    <li> RESTARUNETLY</li>
+    <li> Home</li>
+    <li>About</li>
+    <li>Menu</li>
+    <li>Specials</li>
+    <li>Events</li>
+    <li>Chefs</li>
+    <li>Gallery</li>
+    <li>Drop Down</li>
+    <li>Contact</li>
+    <li id="border">Book A Table</li>
+    </ul>
+   <br>
+   <h1 class="head1">Welcome to <i id="res">Restaurantly</i></h1>
+   <h1 class="head2">Delivering great food for more than 18 years!</h1>
+   <br>
+   <input type="button" value="OUR MENU" id="menu">
+   <input id="book" type="button" value="BOOK A TABLE">
+   <pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+</pre>
+</div>
+
+
+    <div id="z">
+        <section>
+     <pre>
+    <h1 style="color:white;" id="sec">Voluptatem dignissimos provident quasi<br>corporis voluptates sit assumenda.</h1><br></pre>
+    <p style="color: white;" id="secpage">
+        <i><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+        tempor incididunt ut labore et dolore magna aliqua.</i><br><br>
+        <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>
+        <li>Duis aute irure dolor in reprehenderit in voluptate velit.<br><br>
+
+         <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute<br>
+        irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro<br> 
+        dolore eu fugiat nulla pariatur.<br><br>
+
+        <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute<br>
+        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu<br>
+        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,<br>
+        sunt in culpa qui officia deserunt mollit anim id est laborum
+    </p>
+    <pre>
+                    <pre> <h2 class="t">Why Us</h2>
+                    <p class="t1">Why Choose Our Restaurant</p></pre>
+
+    </pre>
+</section>
+<section id="loo">
+    <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/about.jpg" alt="" height="400px" width="450px" id="image">
+</section>
+   </div>
+   </div>
+   <div id="k">
+    
+<section class="l">
+    <h1>01<br>Lorem Ipsum</h1>
+    <p>Ulamco laboris nisi ut aliquip ex ea<br>commodo consequat. Et consectetur<br> ducimus vero placeat</p>
+</section>
+<section class="m">
+    <h1>02<br>Repellat Nihil</h1>
+    <p>Dolorem est fugiat occaecati voluptate<br>velit esse. Dicta veritatis dolor quod et vel<br> dire leno para dest</p>
+</section>
+</section>
+<section class="n">
+    <h1>03<br>Ad ad velit qui</h1>
+    <p>Molestiae officiis omnis illo asperiores.<br>Aut doloribus vitae sunt debitis quo vel<br> nam quis</p>
+</section>
+</div>
+<section class="o">
+    <pre>
+
+    <div class="section-title"><h2>           Menu---------------</h2>
+        <p class="section-title1">         Check Our Tasty Menu</p></div></pre>
+    <pre>
+        <ul>
+            <li style="color: aliceblue;">Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+          </ul>  
+         </div>  
+         
+            </table>
+            <div class="vv">
+                <section class="ll">
+                    <div class="jj"><section>
+                        <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/menu/lobster-bisque.jpg" alt=""height="80px" width="80px" class="m1"></section><section><p class="h1t">Lobster Bisque------------$5.95</p><pre class="h3t"> Lorem, deren, trataro, filede, nerada</pre></section>
+                    </div>
+                    <div class="jj"><section>
+                        <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/menu/bread-barrel.jpg" alt=""height="80px" width="80px" class="m1"></section><section><p class="h1t">Bread Barrel---------------$5.95</p><pre class="h3t"> Lorem, deren, trataro, filede, nerada</pre></section>
+                    </div>
+                    <div class="jj"><section>
+                        <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/menu/cake.jpg" alt=""height="80px" width="80px" class="m1"></section><section><p class="h1t">Crab Cake--------------------------$5.95</p><pre class="h3t"> A delicate crab cake served on a toasted roll with lettuce and tartar sauce</pre></section>
+                    </div>
+                    <div class="jj"><section>
+                        <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/menu/caesar.jpg" alt=""height="80px" width="80px" class="m1"></section><section><p class="h1t">Caesar Selection-----------------$5.95</p><pre class="h3t"> Lorem, deren, trataro, filede, nerada</pre></section>
+                    </div>
+                    <div class="jj"><section>
+                        <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/menu/lobster-roll.jpg" alt=""height="80px" width="80px" class="m1"></section><section><p class="h1t">Lobster Roll-----------------$5.95</p><pre class="h3t"> Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll</p></section>
+                    </div>
+                </section>
+                <section class="kk">
+                    <div class="jj"><section>
+                        <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/menu/tuscan-grilled.jpg" alt=""height="80px" width="80px" class="m1"></section><section><p class="h1t">Tuscan Grilled--------------$5.95</p><pre class="h3t"> Grilled chicken with provolone, artichoke hearts, and roasted red pesto</pre></section>
+                    </div>
+                    <div class="jj"><section>
+                        <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/menu/mozzarella.jpg" alt=""height="80px" width="80px" class="m1"></section><section><p class="h1t">Mozzarella Stick-----------------$5.95</p><pre class="h3t"> Lorem, deren, trataro, filede, nerada</pre></section>
+                    </div>
+                    <div class="jj"><section>
+                        <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/menu/greek-salad.jpg" alt=""height="80px" width="80px" class="m1"></section><section><p class="h1t">Greek Salad---------------------$5.95</p><pre class="h3t"> Fresh spinach, crisp romaine, tomatoes, and Greek olives</pre></section>
+                    </div>
+                    <div class="jj"><section>
+                        <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/menu/spinach-salad.jpg" alt=""height="80px" width="80px" class="m1"></section><section><p class="h1t">Spinach Salad----------------------$5.95</p><pre class="h3t"> Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette</pre></section>
+                    </div>
+                </section>
+            </div>
+        </pre>
+        </div>
+    </section>
+    <section>
+    <div id="c">
+<pre>
+
+
+    <pre><h1 class="section-title2">     Reservation--------------</h1></pre>
+    <pre><h1 class="section-title3">    Book A Table</h1></pre>
+    
+    <table>
+        <tr>
+            <th ><input type="text" value=" Your Name" class="table1"></th>
+            <th ><input type="text" value="Your Email" class="table2"></th>
+            <th><input type="text" value="Your Phone" class="table3"></th>
+        </tr>
+        <tr>
+            <th ><input type="text" value="Date" class="table4"></th>
+            <th ><input type="text" value="Time" class="table5"></th>
+            <th ><input type="text" value="# of people" class="table6"></th>
+        </tr>
+        <tr>
+            <th colspan="10"><input type="text" value="Message" class="table7"></th>
+        </tr>
+    </table>
+                
+    <center><li id="border1">Book A Table</li></center>
+
+</section>
+</pre>
+    </div>
+    <div style="background-color:rgba(0, 0, 0, 0.948)">
+        <pre>
+
+            <pre><h1 class="section-title2">     Reservation--------------</h1></pre>
+    <pre><h1 class="section-title3">    Some photos from Our Restaurant</h1></pre>
+            <table>
+                <tr>
+                    <td><img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/gallery/gallery-1.jpg" alt=""height="330px" width="330px" id="image"></td>
+                    <td><img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/gallery/gallery-2.jpg" alt=""height="330px" width="330px" id="image"></td>
+                    <td><img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/gallery/gallery-3.jpg" alt=""height="330px" width="330px" id="image"></td>
+                    <td><img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/gallery/gallery-4.jpg" alt=""height="330px" width="330px" id="image"></td>
+                </tr>
+                <tr>
+                    <td><img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/gallery/gallery-5.jpg" alt=""height="330px" width="330px" id="image"></td>
+                    <td><img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/gallery/gallery-6.jpg" alt=""height="330px" width="330px" id="image"></td>
+                    <td><img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/gallery/gallery-7.jpg" alt=""height="330px" width="330px" id="image"></td>
+                    <td><img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/gallery/gallery-8.jpg" alt=""height="330px" width="330px" id="image"></td> 
+                </tr>
+            </table>
+
+</pre>
+    </div>
+    <div style="background-color: rgba(0, 0, 0, 0.894);">
+     <pre>
+         
+        <pre><h1 class="section-title2">     CHEFS--------------</h1></pre>
+        <pre><h1 class="section-title3">    Our Proffesional Chefs</h1></pre>
+         <table>
+            <tr>
+                <td><img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/chefs/chefs-1.jpg" alt=""height="400px" width="400px"></td>
+                <td><img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/chefs/chefs-2.jpg" alt=""height="400px" width="400px"></td>
+                <td><img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/chefs/chefs-3.jpg" alt=""height="400px" width="400px"></td>
+            </tr>
+         </table>
+
+
+     </pre>
+    </div>
+   </body>
+   </html>
